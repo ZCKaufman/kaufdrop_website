@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+
+        <meta name="viewport" content="width=device-width">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144166611-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-144166611-1');
+        </script>
+
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+        <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+
+        <title>Kaufdrop</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <!-- NAVIGATION -->
+        <div class="main-nav">
+            <ul class="nav">
+                <li class="name"><a href="//www.kaufdrop.com">Kaufdrop.com</a></li>
+                <li><a href="//www.kaufdrop.com/projects">Projects</a></li>
+            </ul>
+        </div>
+
+        <!-- HEADER -->
+        <header>
+            <a href="//www.kaufdrop.com"><img src="/images/portrait1.jpg" alt="Headshot" class="profile-image"></a>
+            <h1 class="tag information">Projects</h1>
+        </header>
+
+        <!-- CARDS -->
+        <main class="flex" id="main">
+            <!--P5.js-->
+            <div class="column" id="first">
+                <div class="card" id="description">
+                    <h2>Hypermedia Mirrors</h2>
+                    <p>"I would like you to explore the aesthetic and conceptual possibilities of procedural and/or interactive media.
+                      Using the internet as your medium (specifically the p5.js programming environment) I would like you to create
+                      a work that explores an idea through interactivity (mouse, keyboard, sound input for example) or through automated
+                      procedural steps (e.g. for loops, if/else statements, functions). You can use images, videos and/or sound in your
+                      P5 sketches and/or you can create audio/visual media from scratch in P5 as generative art. The topic or theme for
+                      this assignment is the nature of the internet. How do we turn it into something unexpected."</p>
+                    <p>For this project I used the ML5.js library to create a style transfer application based on Fast Style Transfer
+                    by Reiichiro Nakano. The application only contains two styles from models pretrained by other creative coders working
+                    on the fast style transfer algorithm. The two styles available are The Great Wave off Kanagawa by Hokusai and Udnie
+                    by Francis Picabia. In the application you can switch between styles, upload the image you want stylized, and then
+                  hit the style button. The application will then display your image restyled with the style of the artwork you chose.</p>
+                </div>
+            </div>
+
+            <div class="column" id="second">
+                <div class="card" id="displayImage2">
+                </div>
+            </div>
+            <!-- Images -->
+            <div class="tripcolumn" id="first">
+                <div class="card projectImage large" style=background-image:url(images/ChloeTest3.jpg);>
+                </div>
+                <div class="card projectImage large" style=background-image:url(images/BearTest1.jpg);>
+                </div>
+                <div class="card projectImage large" style=background-image:url(images/MeTest1.jpg);>
+                </div>
+            </div>
+
+            <div class="tripcolumn" id="second">
+              <div class="card projectImage large" style=background-image:url(images/UdnieChloeTest3.png);>
+              </div>
+              <div class="card projectImage large" style=background-image:url(images/UdnieBearTest1.png);>
+              </div>
+              <div class="card projectImage large" style=background-image:url(images/UdnieMeTest1.png);>
+              </div>
+            </div>
+
+            <div class="tripcolumn" id="third">
+              <div class="card projectImage large" style=background-image:url(images/WaveChloeTest3.png);>
+              </div>
+              <div class="card projectImage large" style=background-image:url(images/WaveBearTest1.png);>
+              </div>
+              <div class="card projectImage large" style=background-image:url(images/WaveMeTest1.png);>
+              </div>
+            </div>
+
+            
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <p class="copyright">&copy 2021 Kaufdrop LLC</p>
+        </footer>
+    </body>
+</html>

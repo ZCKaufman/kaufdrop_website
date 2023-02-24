@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+
+        <meta name="viewport" content="width=device-width">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144166611-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-144166611-1');
+        </script>
+
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+        <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+
+        <title>Kaufdrop</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@runwayml/hosted-models@0.3.0/dist/hosted-models.js"></script>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <!-- NAVIGATION -->
+        <div class="main-nav">
+            <ul class="nav">
+                <li class="name"><a href="//www.kaufdrop.com">Kaufdrop.com</a></li>
+                <li><a href="//www.kaufdrop.com/projects">Projects</a></li>
+            </ul>
+        </div>
+
+        <!-- HEADER -->
+        <header>
+            <a href="//www.kaufdrop.com"><img src="/images/portrait1.jpg" alt="Headshot" class="profile-image"></a>
+            <h1 class="tag information">What is Art StyleGAN</h1>
+        </header>
+
+        <!-- CARDS -->
+        <main class="flex" id="main">
+            <!--P5.js-->
+            <div class="column" id="first">
+                <div class="card" id="description">
+                    <h2>What is Art?</h2>
+                    <p>For this project I created a dataset of ~700 images that I had saved from Instagram of digital art.
+                    Using RunwayML I trained a StyleGAN using transfer learning from it's original landscape parameters to creating
+                  art using my dataset. As it trained I continued to find more art on Instagram and built a larger dataset of ~1300 images
+                (which included the original ~700 images). After the StyleGAN was trained with 3000 steps I retrained it with another 3000 steps using
+              the newer, larger dataset. I had it generate a latent image walk as well as 50 images which are previewed below.</p>
+                </div>
+            </div>
+
+            <div class="column" id="second">
+                <div class="card" id="displayImage1">
+                </div>
+            </div>
+
+            <!-- Images -->
+            <div class="tripcolumn" id="first">
+                <div class="card projectImage" style=background-image:url(images/img000000000.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000001.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000002.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000003.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000004.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000005.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000006.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000007.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000008.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000009.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000010.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000011.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000012.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000013.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000014.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000015.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000048.png);>
+                </div>
+            </div>
+
+            <div class="tripcolumn" id="second">
+                <div class="card projectImage" style=background-image:url(images/img000000016.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000017.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000018.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000019.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000020.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000021.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000022.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000023.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000024.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000025.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000026.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000027.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000028.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000029.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000030.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000031.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000049.png);>
+                </div>
+            </div>
+
+            <div class="tripcolumn" id="third">
+                <div class="card projectImage" style=background-image:url(images/img000000032.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000033.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000034.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000035.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000036.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000037.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000038.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000039.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000040.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000041.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000042.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000043.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000044.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000045.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000046.png);>
+                </div>
+                <div class="card projectImage" style=background-image:url(images/img000000047.png);>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <p class="copyright">&copy 2021 Kaufdrop LLC</p>
+        </footer>
+    </body>
+</html>

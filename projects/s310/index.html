@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+
+        <meta name="viewport" content="width=device-width">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144166611-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-144166611-1');
+        </script>
+
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+        <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+
+        <title>Kaufdrop</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <!-- NAVIGATION -->
+        <div class="main-nav">
+            <ul class="nav">
+                <li class="name"><a href="//www.kaufdrop.com">Kaufdrop.com</a></li>
+                <li><a href="//www.kaufdrop.com/projects">Projects</a></li>
+            </ul>
+        </div>
+
+        <!-- HEADER -->
+        <header>
+            <a href="//www.kaufdrop.com"><img src="/images/portrait1.jpg" alt="Headshot" class="profile-image"></a>
+            <h1 class="tag information">Projects</h1>
+        </header>
+
+        <!-- CARDS -->
+        <main class="flex" id="main">
+            <!-- AR GRAFFITI -->
+            <div class="column" id="first">
+                <div class="card" id="description">
+                    <h2>AR Graffiti</h2>
+                    <p>"For this project, you will augment a public space or object/thing to make it greater.
+                      This should be a space or object/thing close enough for our class to walk to.
+                      To make this space/object/thing greater you will research its history/origin to understand its
+                      intricacies and relationship to our shared space and culture. Your augmentation could take the form of a
+                      digital object, sound, video, game etc. that has some kind of contextual relationship to the thing being
+                      augmented."</p>
+                    <p>For this project I created an AR Makerspace. Using lasercut pieces of birch wood and the Vuforia engine I created
+                    image targets based on the laser cut pieces and created Blender models of common Makerspace technologies to generate
+                    based on the image targets. In Unity I combined the Blender models and the image targets to create an Android app
+                    that will use a mobile camera to generate the AR Makerspace.</p>
+                </div>
+            </div>
+
+            <div class="column" id="second">
+                <div class="card" id="displayImage1">
+                </div>
+            </div>
+            <!-- Images -->
+            <div class="tripcolumn" id="first">
+                <div class="card projectImage large" style=background-image:url();>
+                </div>
+                <div class="card projectImage large" style=background-image:url();>
+                </div>
+                <div class="card projectImage large" style=background-image:url();>
+                </div>
+            </div>
+
+            <div class="tripcolumn" id="second">
+              <div class="card projectImage large" style=background-image:url();>
+              </div>
+              <div class="card projectImage large" style=background-image:url();>
+              </div>
+              <div class="card projectImage large" style=background-image:url();>
+              </div>
+            </div>
+
+            <div class="tripcolumn" id="third">
+              <div class="card projectImage large" style=background-image:url();>
+              </div>
+              <div class="card projectImage large" style=background-image:url();>
+              </div>
+              <div class="card projectImage large" style=background-image:url();>
+              </div>
+            </div>
+
+            <!--P5.js-->
+            <div class="column" id="first">
+                <div class="card" id="description">
+                    <h2>Hypermedia Mirrors</h2>
+                    <p>"I would like you to explore the aesthetic and conceptual possibilities of procedural and/or interactive media.
+                      Using the internet as your medium (specifically the p5.js programming environment) I would like you to create
+                      a work that explores an idea through interactivity (mouse, keyboard, sound input for example) or through automated
+                      procedural steps (e.g. for loops, if/else statements, functions). You can use images, videos and/or sound in your
+                      P5 sketches and/or you can create audio/visual media from scratch in P5 as generative art. The topic or theme for
+                      this assignment is the nature of the internet. How do we turn it into something unexpected."</p>
+                    <p>For this project I used the ML5.js library to create a style transfer application based on Fast Style Transfer
+                    by Reiichiro Nakano. The application only contains two styles from models pretrained by other creative coders working
+                    on the fast style transfer algorithm. The two styles available are The Great Wave off Kanagawa by Hokusai and Udnie
+                    by Francis Picabia. In the application you can switch between styles, upload the image you want stylized, and then
+                  hit the style button. The application will then display your image restyled with the style of the artwork you chose.</p>
+                </div>
+            </div>
+
+            <div class="column" id="second">
+                <div class="card" id="displayImage2">
+                </div>
+            </div>
+            <!-- Images -->
+            <div class="tripcolumn" id="first">
+                <div class="card projectImage large" style=background-image:url(images/ChloeTest3.jpg);>
+                </div>
+                <div class="card projectImage large" style=background-image:url(images/BearTest1.jpg);>
+                </div>
+                <div class="card projectImage large" style=background-image:url(images/MeTest1.jpg);>
+                </div>
+            </div>
+
+            <div class="tripcolumn" id="second">
+              <div class="card projectImage large" style=background-image:url(images/UdnieChloeTest3.png);>
+              </div>
+              <div class="card projectImage large" style=background-image:url(images/UdnieBearTest1.png);>
+              </div>
+              <div class="card projectImage large" style=background-image:url(images/UdnieMeTest1.png);>
+              </div>
+            </div>
+
+            <div class="tripcolumn" id="third">
+              <div class="card projectImage large" style=background-image:url(images/WaveChloeTest3.png);>
+              </div>
+              <div class="card projectImage large" style=background-image:url(images/WaveBearTest1.png);>
+              </div>
+              <div class="card projectImage large" style=background-image:url(images/WaveMeTest1.png);>
+              </div>
+            </div>
+
+            <!--Arduino-->
+            <div class="column" id="first">
+                <div class="card" id="description">
+                    <h2>Arduino</h2>
+                    <p>"For this project, we will be manipulating inputs and outputs. You will learn how to use sensors to gather data from
+                      the real world (Input) and use Arduino to react to that data using some kind of media (output). You will choose from
+                      a variety of sensors on the circuit playground to gather data to inform how your audience will interact with your
+                      artwork. Lastly, you will create a compelling physical object for your circuit to be housed in. You will also have the
+                      option of utilizing processing to create a reactive media experience that interprets the data and turns it into further
+                      output.  How is it used as a symbol and sign? What kinds of meanings does it carry? Think about this work as an
+                      installation. How would you design the user's experience through your work?"</p>
+                    <p>For this project I used the Circuit Playground Express's (CPE) buttons and light sensor to allow the user to choose
+                    an LED on the CPE and then change its color. The colors of all the LEDs would then be sent to a P5 site where it would
+                    be displayed on the screen in a position relative to the rotation of the CPE as given by it's accelerometer. This allows
+                    the user to draw pixel art on the screen of the CPE by changing the CPE's colors and rotating it in their hand.</p>
+                </div>
+            </div>
+
+            <div class="column" id="second">
+                <div class="card" id="displayImage3" style=background-image:url(images/s310p3.png);>
+                </div>
+            </div>
+            <!-- Images -->
+            <div class="tripcolumn" id="first">
+                <div class="card projectImage large" style=background-image:url(images/ChloeTest3.jpg);>
+                </div>
+                <div class="card projectImage large" style=background-image:url(images/BearTest1.jpg);>
+                </div>
+                <div class="card projectImage large" style=background-image:url(images/MeTest1.jpg);>
+                </div>
+            </div>
+
+            <div class="tripcolumn" id="second">
+              <div class="card projectImage large" style=background-image:url(images/UdnieChloeTest3.png);>
+              </div>
+              <div class="card projectImage large" style=background-image:url(images/UdnieBearTest1.png);>
+              </div>
+              <div class="card projectImage large" style=background-image:url(images/UdnieMeTest1.png);>
+              </div>
+            </div>
+
+            <div class="tripcolumn" id="third">
+              <div class="card projectImage large" style=background-image:url(images/WaveChloeTest3.png);>
+              </div>
+              <div class="card projectImage large" style=background-image:url(images/WaveBearTest1.png);>
+              </div>
+              <div class="card projectImage large" style=background-image:url(images/WaveMeTest1.png);>
+              </div>
+            </div>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <p class="copyright">&copy 2021 Kaufdrop LLC</p>
+        </footer>
+    </body>
+</html>
